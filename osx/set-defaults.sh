@@ -23,10 +23,6 @@ chflags nohidden ~/Library
 defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Set the Finder prefs for showing a few different volumes on the Desktop.
-
-# Run the screensaver if we're in the bottom-left hot corner.
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
