@@ -13,4 +13,10 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
 brew cask install google-chrome firefox
 
 # Install must have apps
-brew cask install alfred github gas-mask iterm2 dropbox licecap skype sequel-pro appzapper
+brew cask install alfred github gas-mask iterm2 dropbox licecap skype sequel-pro appzapper caffeine evernote skitch steam spotify
+
+# Install games
+brew cask league-of-legends minecraft
+
+# Make alfred work nicely with cask
+brew cask alfred link
