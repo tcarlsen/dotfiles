@@ -4,6 +4,7 @@
 
 # Install homebrew-cask
 brew tap phinze/cask
+brew tap caskroom/versions
 brew install brew-cask
 
 # Install some quicklook-plugins
