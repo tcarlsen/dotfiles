@@ -21,3 +21,9 @@ brew cask league-of-legends minecraft
 
 # Make alfred work nicely with cask
 brew cask alfred link
+
+# add zsh as a shell
+sudo echo "/usr/local/bin/zsh" >> /etc/shells
+sudo chsh -s /usr/local/bin/zsh `whoami`
+
+Echo "Done!"
