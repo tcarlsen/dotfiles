@@ -1,0 +1,41 @@
+'editor':
+  'showIndentGuide': true
+  'showInvisibles': true
+  'fontFamily': 'Source Code Pro'
+  'lineHeight': 1.2
+  'fontSize': 15
+'core':
+  'themes': [
+    'neutron-ui'
+    'neutron-syntax'
+  ]
+  'disabledPackages': [
+    'wrap-guide'
+    'autocomplete-paths'
+    'autocomplete-plus'
+    'autocomplete-snippets'
+    'jshint'
+    'auto-update-packages'
+  ]
+  'audioBeep': false
+  'projectHome': '/Users/tcarlsen/Code/'
+'exception-reporting':
+  'userId': '3961d551-c48e-c888-425b-ee566f6d7bf0'
+'release-notes':
+  'viewedVersion': '0.95.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '05382f6ef5bae6bc567c0fa72c018288be4ed6eb'
+'whitespace':
+  'ignoreWhitespaceOnCurrentLine': false
+'gist-it':
+  'userToken': '69d2cd7d5f907fe0caca428f36dda2ab9a2c7eca'
+'atom-beautifier':
+  'JsJslintHappy': true
+'autoprefixer': {}
+'markdown-preview': {}
+'coffee-lint': {}
+'jslint': {}
+'jshint':
+  'validateOnlyOnSave': true
