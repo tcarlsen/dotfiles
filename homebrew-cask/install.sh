@@ -2,28 +2,19 @@
 #
 # homebrew-cask
 
-# Install homebrew-cask
-brew tap phinze/cask
+# Tap tap tap
+brew tap caskroom/cask
 brew tap caskroom/versions
+brew tap caskroom/fonts
+brew tap caskroom/unofficial
+
+# Install homebrew-cask
 brew install brew-cask
 
-# Install some quicklook-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
-
-# Install some browsers
-brew cask install google-chrome firefox
-
-# Install must have apps
-brew cask install alfred github gas-mask iterm2 dropbox licecap skype sequel-pro appzapper caffeine evernote skitch steam spotify
-
-# Install games
-brew cask league-of-legends minecraft
+# Install casks from cask bundle
+brew bundle ~/.dotfiles/homebrew-cask/Caskfile
 
 # Make alfred work nicely with cask
 brew cask alfred link
-
-# add zsh as a shell
-sudo echo "/usr/local/bin/zsh" >> /etc/shells
-sudo chsh -s /usr/local/bin/zsh `whoami`
 
 Echo "Done!"
