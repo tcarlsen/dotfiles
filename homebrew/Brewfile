@@ -1,0 +1,9 @@
+install cheat
+install coreutils
+install git-extras
+install grc
+install hub
+install known_hosts
+install ngrok
+install wget
+install youtube-dl
