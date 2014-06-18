@@ -35,7 +35,8 @@
   'JsJslintHappy': true
 'autoprefixer': {}
 'markdown-preview': {}
-'coffee-lint': {}
+'coffee-lint':
+  'continuousLint': false
 'jslint': {}
 'jshint':
   'validateOnlyOnSave': true
