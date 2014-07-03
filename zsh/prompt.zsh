@@ -57,5 +57,9 @@ set_prompt () {
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
+  window_label=${PWD/${HOME}/\~}
+  tab_label=${PWD##*/}
+  echo -ne "\e]2;${window_label}\a"
+  echo -ne "\e]1;${tab_label: -24}\a"
   set_prompt
 }
