@@ -17,13 +17,6 @@ end)
 local mash = {"cmd", "alt", "ctrl"}
 local mashshift = {"cmd", "alt", "shift"}
 
-local function opendictionary()
-  hydra.alert("Lexicon, at your service.", 0.75)
-  application.launchorfocus("Dictionary")
-end
-
-hotkey.bind(mash, 'D', opendictionary)
-
 hotkey.bind(mash, ';', function() ext.grid.snap(window.focusedwindow()) end)
 hotkey.bind(mash, "'", function() fnutils.map(window.visiblewindows(), ext.grid.snap) end)
 
