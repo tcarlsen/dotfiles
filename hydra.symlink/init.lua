@@ -9,6 +9,8 @@ autolaunch.set(true)
 menu.show(function()
     return {
       {title = "About Hydra", fn = hydra.showabout},
+      {title = "Log", fn = logger.show},
+      {title = "Repl", fn = repl.open},
       {title = "-"},
       {title = "Quit", fn = os.exit},
     }
@@ -41,8 +43,5 @@ hotkey.bind(mash, 'L', ext.grid.pushwindow_right)
 hotkey.bind(mash, 'U', ext.grid.resizewindow_taller)
 hotkey.bind(mash, 'O', ext.grid.resizewindow_wider)
 hotkey.bind(mash, 'I', ext.grid.resizewindow_thinner)
-
-hotkey.bind(mash, 'X', logger.show)
-hotkey.bind(mash, "R", repl.open)
 
 updates.check()
