@@ -20,7 +20,7 @@ local mashshift = {"cmd", "alt", "shift"}
 hotkey.bind(mash, ';', function() ext.grid.snap(window.focusedwindow()) end)
 hotkey.bind(mash, "'", function() fnutils.map(window.visiblewindows(), ext.grid.snap) end)
 
-hotkey.bind(mash, '=', function() ext.grid.adjustwidth( 1) end)
+hotkey.bind(mash, '+', function() ext.grid.adjustwidth( 1) end)
 hotkey.bind(mash, '-', function() ext.grid.adjustwidth(-1) end)
 
 hotkey.bind(mashshift, 'H', function() window.focusedwindow():focuswindow_west() end)
