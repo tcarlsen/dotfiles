@@ -7,6 +7,7 @@
  * If you are unfamiliar with LESS, you can read more about it here:
  * http://www.lesscss.org
  */
+ @import "packages/file-type-icons/stylesheets/fonts";
 
 .terminal {
   background: #2e3239;
@@ -18,4 +19,10 @@
 
 .terminal .cursor {
   background: #fff;
+}
+
+// like the icon from devicons alot better then the one from font-awesome
+[data-name$='.coffee']:before {
+  .di;
+  content: '\e651';
 }
