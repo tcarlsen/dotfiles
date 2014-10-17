@@ -3,7 +3,7 @@
   'showInvisibles': true
   'fontFamily': 'Source Code Pro'
   'lineHeight': 1.2
-  'fontSize': 15
+  'invisibles': {}
 'core':
   'themes': [
     'neutron-ui'
@@ -16,6 +16,11 @@
     'autocomplete-snippets'
     'jshint'
     'auto-update-packages'
+    'atom-beautifier'
+    'csslint'
+    'htmlhint'
+    'jslint'
+    'welcome'
   ]
   'audioBeep': false
   'projectHome': '/Users/tcarlsen/Code/'
@@ -31,6 +36,7 @@
   'ignoreWhitespaceOnCurrentLine': false
 'gist-it':
   'userToken': '69d2cd7d5f907fe0caca428f36dda2ab9a2c7eca'
+  'useHttp': true
 'atom-beautifier':
   'JsJslintHappy': true
 'autoprefixer': {}
@@ -40,3 +46,4 @@
 'jslint': {}
 'jshint':
   'validateOnlyOnSave': true
+'atom-beautify': {}
