@@ -1,3 +1,6 @@
+# https://github.com/caskroom/homebrew-cask/issues/4710#issuecomment-45334885
+# brew cask list | sed 's/^/cask install /' > Caskfile
+
 cask install a-better-finder-attributes
 cask install adobe-creative-cloud
 cask install airflick
