@@ -1,7 +1,5 @@
 'packages': [
   'atom-beautify'
-  'atom-csscomb'
-  'boron-syntax'
   'csslint'
   'cut-line'
   'editorconfig'
@@ -12,9 +10,8 @@
   'jslint'
   'jsonlint'
   'language-jade'
-  'language-lua'
+  'merge-conflicts'
   'neutron-syntax'
   'neutron-ui'
   'package-sync'
-  'visual-bell'
 ]
