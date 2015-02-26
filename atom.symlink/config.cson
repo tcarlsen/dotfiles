@@ -14,8 +14,8 @@
       "background-tips"
     ]
     themes: [
-      "neutron-ui"
-      "neutron-syntax"
+      "one-dark-ui"
+      "one-dark-syntax"
     ]
     projectHome: "~/Code"
     audioBeep: false
