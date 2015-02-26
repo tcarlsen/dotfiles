@@ -48,3 +48,6 @@
   htmlhint: {}
 ".ini.source":
   editor: {}
+  "file-icons":
+    forceShow: true
+    coloured: false
