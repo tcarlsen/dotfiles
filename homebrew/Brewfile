@@ -6,3 +6,4 @@ install known_hosts
 install ngrok
 install wget
 install youtube-dl
+install node
