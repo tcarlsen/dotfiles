@@ -1,12 +1,12 @@
 "*":
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 15
     lineHeight: 1.2
     showInvisibles: true
     showIndentGuide: true
     scrollPastEnd: true
     invisibles: {}
+    fontSize: 15
   core:
     disabledPackages: [
       "wrap-guide"
@@ -43,11 +43,10 @@
   emmet: {}
   csslint: {}
   jsonlint: {}
-  "tree-view": {}
-  jslint: {}
+  "tree-view":
+    hideIgnoredNames: true
   htmlhint: {}
-".ini.source":
-  editor: {}
+  jslint: {}
   "file-icons":
     forceShow: true
     coloured: false
