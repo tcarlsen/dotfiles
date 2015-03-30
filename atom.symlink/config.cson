@@ -30,7 +30,6 @@
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "gist-it":
-    userToken: "69d2cd7d5f907fe0caca428f36dda2ab9a2c7eca"
     useHttp: true
   "atom-beautify":
     analytics: false
