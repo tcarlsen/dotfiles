@@ -1,67 +1,22 @@
-cask install 1password
-cask install a-better-finder-attributes
-cask install adobe-creative-cloud
-cask install animated-gif-quicklook
-cask install appzapper
-cask install asepsis
-cask install atom
-cask install audacity
-cask install bartender
-cask install citrix-receiver
-cask install deluge
-cask install dropbox
-cask install epic
-cask install eve
-cask install firefox
-cask install flashlight
-cask install flycut
-cask install font-source-code-pro
-cask install font-source-serif-pro
-cask install gas-mask
-cask install gifrocket
-cask install github
-cask install gitter
-cask install google-chrome-dev
-cask install handbrake
-cask install hetimazipql
-cask install hex
-cask install insync
-cask install iterm2
-cask install keepingyouawake
-cask install keka
-cask install keyboard-cleaner
-cask install league-of-legends
-cask install licecap
-cask install macpaw-gemini
-cask install mailbox
-cask install minecraft
-cask install near-lock
-cask install obs
-cask install omnidisksweeper
-cask install picasa
-cask install qlcolorcode
-cask install qlimagesize
-cask install qlmarkdown
-cask install qlstephen
-cask install quickgeojson
-cask install quicklook-csv
-cask install quicklook-json
-cask install quicklook-pfm
-cask install quicknfo
-cask install sequel-pro
-cask install skype
-cask install slack
-cask install spotify
-cask install sputnik
-cask install sqlitestudio
-cask install steam
-cask install teamspeak-client
-cask install textmate
-cask install textwrangler
-cask install torbrowser
-cask install transmission
-cask install tunnelbear
-cask install typora
-cask install virtualbox
-cask install vlc
-cask install wavtap
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'caskroom/unofficial'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+tap 'homebrew/fuse'
+tap 'homebrew/php'
+brew 'caskroom/cask/brew-cask'
+brew 'homebrew/dupes/zlib'
+brew 'homebrew/fuse/ntfs-3g'
+brew 'homebrew/php/composer'
+brew 'homebrew/php/php55'
+brew 'git'
+brew 'cig'
+brew 'git-extras'
+brew 'ngrok'
+brew 'node'
+brew 'speedtest_cli'
+brew 'wget'
+brew 'wifi-password'
+brew 'youtube-dl'
