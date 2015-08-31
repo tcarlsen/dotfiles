@@ -12,9 +12,12 @@ fi
 alias brewi="brew install"
 alias brewu="brew uninstall"
 alias brewup="brew upgrade"
+alias brewh="brew home"
 
 alias caski="brew cask install"
 alias casku="brew cask zap"
+alias caskh="brew cask home"
+
 
 alias npmi="npm install"
 alias npmu="npm uninstall"
