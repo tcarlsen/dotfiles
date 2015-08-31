@@ -1,12 +1,9 @@
 "*":
   editor:
-    fontFamily: "Source Code Pro"
-    lineHeight: 1.2
     showInvisibles: true
     showIndentGuide: true
     scrollPastEnd: true
     invisibles: {}
-    fontSize: 15
     fontSize: 13
     fontFamily: "Monoid"
     lineHeight: 1.3
