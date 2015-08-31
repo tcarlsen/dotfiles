@@ -52,3 +52,5 @@
   "file-icons":
     forceShow: true
     coloured: false
+  pigments:
+    markerType: "square-dot"
