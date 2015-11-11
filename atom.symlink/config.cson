@@ -1,21 +1,19 @@
 "*":
   editor:
-    showInvisibles: true
-    showIndentGuide: true
     scrollPastEnd: true
-    invisibles: {}
-    fontSize: 13
-    fontFamily: "Monoid"
+    invisibles:
+      space: "⋅"
     lineHeight: 1.3
+    fontFamily: "Hack"
+    showInvisibles: true
+    tabLength: 4
+    confirmCheckoutHeadRevision: false
+    fontSize: 13
   core:
     disabledPackages: [
       "wrap-guide"
       "welcome"
       "background-tips"
-    ]
-    themes: [
-      "one-dark-ui"
-      "one-dark-syntax"
     ]
     projectHome: "~/Code"
     audioBeep: false
@@ -40,14 +38,18 @@
     html_indent_inner_html: true
     html_preserve_newlines: false
   emmet: {}
-  csslint: {}
+  csslint:
+    useFoldModeAsDefault: true
   jsonlint: {}
   "tree-view":
     hideIgnoredNames: true
   htmlhint: {}
-  jslint: {}
+  jslint:
+    useFoldModeAsDefault: true
   "file-icons":
     forceShow: true
     coloured: false
   pigments:
     markerType: "square-dot"
+  "one-dark-ui":
+    layoutMode: "Compact"
