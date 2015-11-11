@@ -23,3 +23,8 @@
   'Use Strict':
     'prefix': 'us'
     'body': '\'use strict\';'
+
+'.text.html':
+  'Empty favicon':
+    'prefix': 'favicon'
+    'body': '<link rel="icon" href="data:;base64,iVBORw0KGgo=">'
