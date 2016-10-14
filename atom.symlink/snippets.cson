@@ -14,22 +14,48 @@
 #     'body': 'console.log $1'
 #
 
-'.source.ts':
-  'Prevent default':
-    'prefix': 'log'
-    'body': 'console.log($1);'
-
-'.source.js':
-  'Prevent default':
-    'prefix': 'pd'
-    'body': 'e.preventDefault();'
-
-'.source.js':
-  'Use Strict':
-    'prefix': 'us'
-    'body': '\'use strict\';'
-
+# HTML
 '.text.html':
   'Empty favicon':
     'prefix': 'favicon'
     'body': '<link rel="icon" href="data:;base64,iVBORw0KGgo=">'
+  'Lets get startet':
+    'prefix': 'html'
+    'body': """
+      <!DOCTYPE html>
+      <html lang="da">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>$1</title>
+        <base href="/">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+          body { margin:0; }
+        </style>
+      </head>
+      <body>
+        $2
+        <script src="app.js"></script>
+      </body>
+      </html>
+    """
+
+# JavaScript
+'.source.js':
+  'Prevent default':
+    'prefix': 'pd'
+    'body': 'e.preventDefault()'
+  'Use Strict':
+    'prefix': 'us'
+    'body': '\'use strict\''
+  'Console log':
+    'prefix': 'log'
+    'body': 'console.log($1)'
+
+# TypeScript
+'.source.ts':
+  'Prevent default':
+    'prefix': 'log'
+    'body': 'console.log($1);'
