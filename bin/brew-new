@@ -53,7 +53,7 @@ checkRenamed() {
     done < /tmp/git-difftree-log.txt
 }
 
-cd $(brew --prefix)/Library/Taps/caskroom/homebrew-cask
+cd $(brew --prefix)/Homebrew/Library/Taps/caskroom/homebrew-cask
 OLDREV=$(git rev-parse -q --short --verify HEAD)
 brew update
 NEWREV=$(git rev-parse -q --short --verify HEAD)
