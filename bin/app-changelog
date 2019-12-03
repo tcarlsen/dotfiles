@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git changelog --tag $1 CHANGELOG.md --no-merges
