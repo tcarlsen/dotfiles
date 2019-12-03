@@ -1,3 +1,0 @@
-# add zsh as a shell
-sudo echo "/bin/zsh" >> /etc/shells
-sudo chsh -s /bin/zsh `whoami`

@@ -1,10 +1,12 @@
 # grc overides for ls
 #   Made possible through contributions from generous benefactors like
 #   `brew install coreutils`
-if $(exa &>/dev/null)
+if $(gls &>/dev/null)
 then
-  alias l="exa -a --group-directories-first"
-  alias ls="exa -lah --git --group-directories-first"
+  alias ls="gls -F --color"
+  alias l="gls -lAh --color"
+  alias ll="gls -l --color"
+  alias la='gls -A --color'
 fi
 
 alias brewi="brew install"
@@ -16,12 +18,6 @@ alias cask="brew cask"
 alias caski="cask install"
 alias casku="cask zap"
 alias caskh="cask home"
-
-
-alias npmi="npm install"
-alias npmu="npm uninstall"
-alias npmig="npm install -g"
-alias npmug="npm uninstall -g"
 
 alias php-server="php -S localhost:8000"
 alias lumen-server="php artisan serve"

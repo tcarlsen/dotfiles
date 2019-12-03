@@ -20,9 +20,9 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "| %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
     else
-      echo "| %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
     fi
   fi
 }
@@ -73,9 +73,5 @@ set_prompt () {
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
-  window_label=${PWD/${HOME}/\~}
-  tab_label=${PWD##*/}
-  echo -ne "\e]2;${window_label}\a"
-  echo -ne "\e]1;${tab_label: -24}\a"
   set_prompt
 }

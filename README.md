@@ -56,6 +56,8 @@ cd ~/.dotfiles
 script/bootstrap
 ```
 
+To unstall all apps in the brewfile run `brew bundle` aswell.
+
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
 

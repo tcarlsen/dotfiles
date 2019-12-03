@@ -1,6 +1,0 @@
-#!/bin/sh
-#
-# Clean up your Downloads folder
-
-rm -rf ~/Downloads/*
-echo "Your Downloads folder is now nice and clean!"
