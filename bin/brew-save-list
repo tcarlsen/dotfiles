@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-brew cask list | sed 's/^/cask install /' > "${HOME}/.dotfiles/homebrew/Brewfile"
+brew list | sed 's/^/brew install /' > "${HOME}/.dotfiles/Brewfile"
