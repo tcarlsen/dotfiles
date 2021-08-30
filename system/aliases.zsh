@@ -14,10 +14,5 @@ alias brewu="brew uninstall"
 alias brewup="brew upgrade"
 alias brewh="brew home"
 
-alias cask="brew cask"
-alias caski="cask install"
-alias casku="cask zap"
-alias caskh="cask home"
-
 alias php-server="php -S localhost:8000"
 alias lumen-server="php artisan serve"
