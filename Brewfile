@@ -49,4 +49,3 @@ brew install ultimaker-cura
 brew install visual-studio-code
 brew install vlc
 brew install xee
-brew install youtube-dl-gui
