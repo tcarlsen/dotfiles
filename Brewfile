@@ -1,51 +1,46 @@
-tap homebrew/bundle
-tap homebrew/cask
-tap homebrew/cask-drivers
-tap homebrew/cask-fonts
-tap homebrew/cask-versions
-tap homebrew/core
-tap homebrew/services
-
-brew install bitwarden
-brew install cliclick
-brew install docker
-brew install docker-compose
-brew install git
-brew install git-extras
-brew install maven
-brew install mysql
-brew install node@16
-brew install python@3.9
-brew install sqlite
-brew install wget
-brew install yarn
-brew install appzapper
-brew install balenaetcher
-brew install bartender
-brew install bbedit
-brew install clicker-for-youtube
-brew install cyberduck
-brew install devtoys
-brew install discord
-brew install dropbox
-brew install firefox
-brew install font-hack
-brew install github
-brew install glance
-brew install google-chrome
-brew install iterm2
-brew install keepingyouawake
-brew install mark-text
-brew install messenger
-brew install microsoft-edge
-brew install omnidisksweeper
-brew install postman
-brew install sequel-pro
-brew install slack
-brew install spotify
-brew install transnomino
-brew install twitch
-brew install ultimaker-cura
-brew install visual-studio-code
-brew install vlc
-brew install xee
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+brew "cliclick"
+brew "docker"
+brew "docker-compose"
+brew "git"
+brew "git-extras"
+brew "maven"
+brew "mysql"
+brew "node@16"
+brew "python@3.9"
+brew "wget"
+brew "yarn"
+cask "appzapper"
+cask "balenaetcher"
+cask "bartender"
+cask "bbedit"
+cask "clicker-for-youtube"
+cask "cyberduck"
+cask "devtoys"
+cask "discord"
+cask "dropbox"
+cask "firefox"
+cask "font-hack"
+cask "github"
+cask "glance"
+cask "google-chrome"
+cask "iterm2"
+cask "keepingyouawake"
+cask "mark-text"
+cask "messenger"
+cask "microsoft-auto-update"
+cask "microsoft-edge"
+cask "omnidisksweeper"
+cask "postman"
+cask "sequel-pro"
+cask "slack"
+cask "spotify"
+cask "transnomino"
+cask "twitch"
+cask "ultimaker-cura"
+cask "visual-studio-code"
+cask "vlc"
+cask "xee"
