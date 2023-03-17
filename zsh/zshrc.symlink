@@ -53,5 +53,6 @@ export PATH="/usr/local/opt/node@18/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/node@18/lib"
 export CPPFLAGS="-I/usr/local/opt/node@18/include"
 # Java
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
