@@ -1,0 +1,6 @@
+#!/bin/sh
+
+yarn add EkstraBladetUdvikling/eb-designsystem#$1
+cd node_modules/@ekstra-bladet/designsystem
+yarn install
+cd ../../../
