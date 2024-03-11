@@ -16,3 +16,13 @@ alias brewh="brew home"
 
 alias php-server="php -S localhost:8000"
 alias lumen-server="php artisan serve"
+
+# Deploy from eb-deploy
+alias mvn-deploy-dev="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=thetis07.eb-dev.jppol.net && cd -"
+alias mvn-deploy-test01="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino01.eb-test.jppol.net && cd -"
+alias mvn-deploy-test02="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino02.eb-test.jppol.net && cd -"
+alias mvn-deploy-test03="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino03.eb-test.jppol.net && cd -"
+alias mvn-deploy-test04="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino04.eb-test.jppol.net && cd -"
+alias mvn-deploy-test05="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino05.eb-test.jppol.net && cd -"
+alias mvn-deploy-test06="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino06.eb-test.jppol.net && cd -"
+alias mvn-deploy-test07="cd ~/Code/eb-deploy; mvn clean install -f ../ekstrabladet/pom.xml && mvn clean install -Pcdeploy -Dassembly.host=ino07.eb-test.jppol.net && cd -"
