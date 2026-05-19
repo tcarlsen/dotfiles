@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap "homebrew/bundle"
-
 brew 'atuin'
 brew "chruby"
 brew "docker", link: false
@@ -17,25 +15,19 @@ brew "yt-dlp"
 
 cask "appzapper"
 cask "balenaetcher"
-cask "clicker-for-youtube"
 cask "diffusionbee"
 cask "discord"
-cask "docker"
 cask "firefox"
 cask "github"
-cask "google-chrome"
 cask "iterm2"
 cask "keepingyouawake"
 cask "keyboard-cleaner"
-cask "mark-text"
-cask "messenger"
 cask "omnidisksweeper"
 cask "postman"
 cask "slack"
 cask "ultimaker-cura"
 cask "visual-studio-code"
 cask "vlc"
-cask "xee"
 
 vscode "csstools.postcss"
 vscode "dbaeumer.vscode-eslint"
