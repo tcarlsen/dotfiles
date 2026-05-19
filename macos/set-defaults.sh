@@ -33,19 +33,19 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Hide Safari's bookmark bar.
-defaults write com.apple.Safari.plist ShowFavoritesBar -bool false
+defaults write com.apple.Safari ShowFavoritesBar -bool false 2>/dev/null
 
 # Always show Safari's "URL display" tab in the lower left on mouseover. Strangely
 # like, everyone and their LLMs on the internet thinks this is ShowStatusBar, but
 # it's not.
-defaults write com.apple.Safari ShowOverlayStatusBar -bool true
+defaults write com.apple.Safari ShowOverlayStatusBar -bool true 2>/dev/null
 
 # Set up Safari for development.
-defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
-defaults write com.apple.Safari.plist IncludeDevelopMenu -bool true
-defaults write com.apple.Safari.plist WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari.plist "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+defaults write com.apple.Safari ShowDevelopMenu -bool true 2>/dev/null
+defaults write com.apple.Safari IncludeDevelopMenu -bool true 2>/dev/null
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true 2>/dev/null
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true 2>/dev/null
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true 2>/dev/null
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -154,31 +154,31 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock hide-mirror -bool true
 
 # Reset Launchpad
-find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
+find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete 2>/dev/null 2>/dev/null
 
 # Set Safari’s home page to `about:blank` for faster loading
-defaults write com.apple.Safari HomePage -string "about:blank"
+defaults write com.apple.Safari HomePage -string "about:blank" 2>/dev/null
 
-# Prevent Safari from opening ‘safe’ files automatically after downloading
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+# Prevent Safari from opening 'safe' files automatically after downloading
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false 2>/dev/null
 
-# Hide Safari’s bookmarks bar by default
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+# Hide Safari's bookmarks bar by default
+defaults write com.apple.Safari ShowFavoritesBar -bool false 2>/dev/null
 
-# Hide Safari’s sidebar in Top Sites
-defaults write com.apple.Safari ShowSidebarInTopSites -bool false
+# Hide Safari's sidebar in Top Sites
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false 2>/dev/null
 
-# Disable Safari’s thumbnail cache for History and Top Sites
-defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+# Disable Safari's thumbnail cache for History and Top Sites
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2 2>/dev/null
 
-# Enable Safari’s debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+# Enable Safari's debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true 2>/dev/null
 
 # Make Safari’s search banners default to Contains instead of Starts With
-defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false 2>/dev/null
 
-# Remove useless icons from Safari’s bookmarks bar
-defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+# Remove useless icons from Safari's bookmarks bar
+defaults write com.apple.Safari ProxiesInBookmarksBar "()" 2>/dev/null
 
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
@@ -187,7 +187,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# Note: disablelocal is deprecated in newer macOS versions
+hash tmutil &> /dev/null && sudo tmutil disablelocal 2>/dev/null || true
 
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
