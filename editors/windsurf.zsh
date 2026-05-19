@@ -1,1 +1,1 @@
-export PATH="/Users/holman/.codeium/windsurf/bin:$PATH"
+export PATH="/Users/thomas.carlsen/.codeium/windsurf/bin:$PATH"
